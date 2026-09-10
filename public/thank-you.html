@@ -6,12 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Thank you for contacting Casmir Onyekani." />
     <title>Message Sent | Casmir Onyekani</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #171717;
+        }
+
+        main {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        section {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 56px 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        section > p:first-child {
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #666666;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            line-height: 1.1;
+        }
+
+        section > p:nth-of-type(2) {
+            max-width: 480px;
+            margin: 0 auto 32px;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #555555;
+        }
+
+        a {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 8px;
+            background-color: #171717;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+
+        a:hover {
+            opacity: 0.85;
+            transform: translateY(-1px);
+        }
+
+        @media (max-width: 480px) {
+            section {
+                padding: 40px 24px;
+            }
+
+            section > p:nth-of-type(2) {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <main>
         <section>
-            <p>Contact / message received</p>
+            <p>Message received</p>
 
             <h1>Thank you!</h1>
 
@@ -21,7 +102,7 @@
             </p>
 
             <a href="/">
-                Back to our site
+                Back to site
             </a>
         </section>
     </main>
