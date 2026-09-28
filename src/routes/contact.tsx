@@ -116,23 +116,10 @@ function ContactPage() {
             name="contact"
             method="POST"
             data-netlify="true"
-            netlify-honeypot="bot-field"
             action="/thank-you.html"
             className="rounded-xl bg-ink p-6 text-surface md:p-9"
           >
             <input type="hidden" name="form-name" value="contact" />
-
-            {/* <p className="hidden">
-              <label>
-                Don’t fill this out if you’re human:
-                <input name="bot-field" />
-              </label>
-            </p> */}
-
-            <div hidden>
-              <label htmlFor="bot-field">Don’t fill this out if you’re human:</label>
-              <input id="bot-field" name="bot-field" tabIndex={-1} autoComplete="off" />
-            </div>
 
             <div className="mb-8">
               <Mail className="size-6 text-cobalt" aria-hidden="true" />
