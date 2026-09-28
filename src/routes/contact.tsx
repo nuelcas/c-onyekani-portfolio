@@ -122,12 +122,17 @@ function ContactPage() {
           >
             <input type="hidden" name="form-name" value="contact" />
 
-            <p className="hidden">
+            {/* <p className="hidden">
               <label>
                 Don’t fill this out if you’re human:
                 <input name="bot-field" />
               </label>
-            </p>
+            </p> */}
+
+            <div hidden>
+              <label htmlFor="bot-field">Don’t fill this out if you’re human:</label>
+              <input id="bot-field" name="bot-field" tabIndex={-1} autoComplete="off" />
+            </div>
 
             <div className="mb-8">
               <Mail className="size-6 text-cobalt" aria-hidden="true" />
@@ -196,6 +201,21 @@ function ContactPage() {
               </Button>
             </div>
           </form>
+
+          <div className="mt-6 border-t border-ink/10 pt-5">
+            <p className="text-sm text-mist">
+              Prefer Upwork?{" "}
+              <a
+                href="https://www.upwork.com/freelancers/~01a16f9efc4dc130bb?mp_source=share"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-ink underline decoration-cobalt decoration-2 underline-offset-4 transition-colors hover:text-cobalt"
+              >
+                Hire Me
+              </a>
+              .
+            </p>
+          </div>
         </section>
       </div>
     </main>
